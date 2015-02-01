@@ -72,7 +72,25 @@
       </ul>
 
     </section>
-    <section class="content-main"></section>
+
+    <section class="content-main">
+      <div class="new-post group">
+        <a href="#" class="thumb" title="Sennacy the Great"><img src="../shared/img/cat.jpg"></a>
+        <form class="new-post-form">
+          <div class="input">
+            <label for="post_title">Post Title</label>
+            <input type="text" name="post[title]" id="post_title" value="Lorem Ipsum Dolor Sit Amet">
+          </div>
+          <div class="input">
+            <label for="post_body">Post Body</label>
+            <textarea name="post[Body]" id="post_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+          </div>
+          <div class="submit">
+            <button class="submit-button">Post to wall</button> or <button class="cancel-button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="../shared/js/jquery.js"></script>
