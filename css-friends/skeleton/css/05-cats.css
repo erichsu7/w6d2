@@ -5,6 +5,7 @@
   background-size: cover;
   height: 200px;
   border-bottom: 1px solid #ccc;
+  line-height: 1;
 }
 
 .content-header > h1 {
