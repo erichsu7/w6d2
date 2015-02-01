@@ -3,12 +3,16 @@
   background-color: #fff;
   width: 900px;
   margin: auto;
+  margin-bottom: 60px;
   box-sizing: content-box;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
   color: #aaa;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
 }
 
 .footer-copyright {
