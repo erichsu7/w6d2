@@ -33,6 +33,7 @@
       </li>
       <li><a href="#">Profile</a></li>
       <li><a href="#">Settings</a></li>
+      <li><a href="#" class="js-modal-open">Sign in</a></li>
     </ul>
   </nav>
   </header>
@@ -153,11 +154,6 @@
     </section>
   </main>
 
-  <script src="../shared/js/jquery.js"></script>
-  <script>
-
-  </script>
-
   <footer class="footer group">
     <div class="footer-copyright">© 2014 App Academy. All rights reserved.</div>
     <ul class="footer-links group">
@@ -167,5 +163,45 @@
       <li><a href="#">Privacy</a></li>
     </ul>
   </footer>
+
+  <div class="modal">
+    <div class="modal-screen">
+    </div>
+    <form class="modal-form">
+      <div class="modal-form-header">
+        <h1>Welcome</h1>
+        <p>Please sign in to continue</p>
+        <button class="close-form-button js-modal-close">&times</button>
+      </div>
+      <div class="input">
+        <label for="user_email">Email</label>
+        <input type="text" name="user[email]" value="sennacy@appacademy.io">
+      </div>
+      <div class="input">
+        <label for="user_password">Password</label>
+        <input type="password" name="user[password]" value="password">
+      </div>
+      <div class="submit">
+        <button class="submit-button">Sign in</button> or <button class="cancel-button">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="../shared/js/jquery.js"></script>
+  <script>
+  $(function(){
+
+    $("body").on("click", ".js-modal-open", function(event){
+      event.preventDefault();
+      $(".modal").addClass("is-open");
+    });
+
+    $("body").on("click", ".js-modal-close", function(event){
+      event.preventDefault();
+      $(".modal").removeClass("is-open");
+    });
+
+  });
+  </script>
 </body>
 </html>
